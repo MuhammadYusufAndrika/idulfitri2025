@@ -32,7 +32,7 @@ export default function Home() {
   const [isAnimeLoaded, setIsAnimeLoaded] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showDecorations, setShowDecorations] = useState(false);
-  const [familyName, setFamilyName] = useState<string>("Syahri Family");
+  const [familyName, setFamilyName] = useState<string>("Syahri Familyy");
   const [phoneNumber, setPhoneNumber] = useState("6285669812501"); // Default dengan kode Indonesia
   const chatMessage = "Selamat Hari Raya Idul Fitri, mohon maaf lahir dan batin. Semoga kita selalu diberikan kesehatan, kebahagiaan, dan keberkahan dalam hidup. Taqabbalallahu minna wa minkum.";
 
