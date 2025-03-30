@@ -770,7 +770,7 @@ export default function Home() {
           <div className="greeting-card tilt-card">
             <div className="profile-frame">
               <div className="profile-inner">
-                <Image src="/img/profile.jpg" alt="Foto Profil" className="profile-img" width={400} height={400} priority unoptimized />
+                <Image src="/img/profile.jpg" alt="Foto Profil" className="profile-img" width={600} height={400} priority unoptimized />
               </div>
               <div className="ketupat"></div>
             </div>

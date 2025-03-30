@@ -1,29 +1,29 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import Script from 'next/script'
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Script from "next/script";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Ucapan Lebaran 2025 | Selamat Hari Raya Idul Fitri',
-  description: 'Ucapan Selamat Hari Raya Idul Fitri 1446 H dengan animasi dan efek visual interaktif',
-  keywords: 'Lebaran, Idul Fitri, Ramadhan, Ucapan Lebaran, Greeting Card, Kartu Ucapan, Hari Raya',
-  authors: [{ name: 'Lebaran Greetings Team' }],
+  title: "Ucapan Lebaran 2025 | Selamat Hari Raya Idul Fitri",
+  description: "Ucapan Selamat Hari Raya Idul Fitri 1446 H dengan animasi dan efek visual interaktif",
+  keywords: "Lebaran, Idul Fitri, Ramadhan, Ucapan Lebaran, Greeting Card, Kartu Ucapan, Hari Raya",
+  authors: [{ name: "Lebaran Greetings Team" }],
   openGraph: {
-    title: 'Ucapan Lebaran 2025 | Selamat Hari Raya Idul Fitri',
-    description: 'Ucapan Selamat Hari Raya Idul Fitri 1446 H dengan animasi interaktif',
-    images: ['/asset/og-image.jpg'],
-    type: 'website',
-    siteName: 'Ucapan Lebaran 2025',
+    title: "Ucapan Lebaran 2025 | Selamat Hari Raya Idul Fitri",
+    description: "Ucapan Selamat Hari Raya Idul Fitri 1446 H dengan animasi interaktif",
+    images: ["/asset/og-image.jpg"],
+    type: "website",
+    siteName: "Ucapan Lebaran 2025",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Ucapan Lebaran 2025 | Selamat Hari Raya Idul Fitri',
-    description: 'Ucapan Selamat Hari Raya Idul Fitri 1446 H dengan animasi interaktif',
-    images: ['/asset/og-image.jpg'],
+    card: "summary_large_image",
+    title: "Ucapan Lebaran 2025 | Selamat Hari Raya Idul Fitri",
+    description: "Ucapan Selamat Hari Raya Idul Fitri 1446 H dengan animasi interaktif",
+    images: ["/asset/og-image.jpg"],
   },
-}
+};
 
 export default function RootLayout({
   children,
@@ -42,19 +42,11 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
-        
+
         {/* Load scripts */}
-        <Script 
-          src="https://cdn.jsdelivr.net/npm/sweetalert2@11" 
-          strategy="lazyOnload"
-          id="swal-script"
-        />
-        <Script 
-          src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" 
-          strategy="lazyOnload"
-          id="anime-script"
-        />
+        <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" strategy="lazyOnload" id="swal-script" />
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" strategy="lazyOnload" id="anime-script" />
       </body>
     </html>
-  )
+  );
 }
