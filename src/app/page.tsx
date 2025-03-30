@@ -32,7 +32,7 @@ export default function Home() {
   const [isAnimeLoaded, setIsAnimeLoaded] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showDecorations, setShowDecorations] = useState(false);
-  const [familyName, setFamilyName] = useState<string>("Syahri Familyy");
+  const [familyName, setFamilyName] = useState<string>("Syahri Family");
   const [phoneNumber, setPhoneNumber] = useState("6285669812501"); // Default dengan kode Indonesia
   const chatMessage = "Selamat Hari Raya Idul Fitri, mohon maaf lahir dan batin. Semoga kita selalu diberikan kesehatan, kebahagiaan, dan keberkahan dalam hidup. Taqabbalallahu minna wa minkum.";
 
@@ -770,7 +770,7 @@ export default function Home() {
           <div className="greeting-card tilt-card">
             <div className="profile-frame">
               <div className="profile-inner">
-                <Image src="/img/profile.jpg" alt="Foto Profil" className="profile-img" width={1000} height={1000} priority unoptimized />
+                <Image src="/img/profile.jpg" alt="Foto Profil" className="profile-img" width={1000} height={1000}/>
               </div>
               <div className="ketupat"></div>
             </div>
